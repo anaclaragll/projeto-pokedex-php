@@ -1,0 +1,105 @@
+/* Configurações Básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 { color: #333; margin-bottom: 10px; }
+
+/* Busca */
+.busca-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ef5350;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover { background-color: #d32f2f; }
+
+/* Cartão do Pokémon */
+.cartao {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: #fafafa;
+    /* Animação de entrada */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.info {
+    text-align: left;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Utilitários */
+.escondido { display: none; }
+
+.erro {
+    color: #d32f2f;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE (Obrigatório na atividade) */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 { font-size: 1.5rem; }
+}
+
+body { font-family: sans-serif; background: #f4f4f4; display: flex; justify-content: center; padding: 50px; }
+.container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; text-align: center; }
+.busca-container { display: flex; gap: 5px; margin-bottom: 20px; }
+input { flex: 1; padding: 5px; }
+button { background: #ff1f1f; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+.cartao img { width: 100%; }
+.info { text-align: left; }
+.escondido { display: none; }
+.erro { color: red; }

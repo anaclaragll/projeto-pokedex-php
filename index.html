@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex API - ADS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>⚡ Pokédex API</h1>
+        <p>Busque um Pokémon pelo nome ou ID (1-151)</p>
+
+        <div class="busca-container">
+            <input type="text" id="campo-busca" placeholder="Ex: Pikachu ou 25">
+            <button onclick="buscarPokemon()">Buscar</button>
+        </div>
+
+        <div id="cartao-pokemon" class="cartao escondido">
+            <h2 id="poke-nome">Nome</h2>
+            <p id="poke-id">#001</p>
+            <img id="poke-imagem" src="" alt="Imagem do Pokémon">
+            
+            <div class="info">
+                <p><strong>Tipo:</strong> <span id="poke-tipo">---</span></p>
+                <p><strong>Peso:</strong> <span id="poke-peso">---</span></p>
+                <p><strong>Altura:</strong> <span id="poke-altura">---</span></p>
+            </div>
+        </div>
+
+        <p id="mensagem-erro" class="erro escondido"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
