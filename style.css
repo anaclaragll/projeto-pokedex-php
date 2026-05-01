@@ -1,4 +1,4 @@
-/* Configurações Básicas */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f0f2f5;
+    background-color: #86b3f7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    background: white;
+    background: rgb(232, 198, 198);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -27,7 +27,7 @@ body {
 
 h1 { color: #333; margin-bottom: 10px; }
 
-/* Busca */
+
 .busca-container {
     display: flex;
     gap: 10px;
@@ -44,24 +44,23 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #ef5350;
-    color: white;
+    background-color: #0f1c4b;
+    color: rgb(19, 16, 69);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-button:hover { background-color: #d32f2f; }
+button:hover { background-color: #300b60; }
 
-/* Cartão do Pokémon */
 .cartao {
     margin-top: 20px;
     padding: 20px;
-    border: 1px solid #eee;
+    border: 1px solid #7848f0;
     border-radius: 10px;
     background: #fafafa;
-    /* Animação de entrada */
+   
     animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -76,16 +75,16 @@ button:hover { background-color: #d32f2f; }
     line-height: 1.6;
 }
 
-/* Utilitários */
+
 .escondido { display: none; }
 
 .erro {
-    color: #d32f2f;
+    color:#d32f2f;
     margin-top: 10px;
     font-weight: bold;
 }
 
-/* RESPONSIVIDADE (Obrigatório na atividade) */
+
 @media (max-width: 480px) {
     .container {
         padding: 1rem;
@@ -95,7 +94,7 @@ button:hover { background-color: #d32f2f; }
 }
 
 body { font-family: sans-serif; background: #f4f4f4; display: flex; justify-content: center; padding: 50px; }
-.container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; text-align: center; }
+.container { background: rgb(225, 219, 231); padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; text-align: center; }
 .busca-container { display: flex; gap: 5px; margin-bottom: 20px; }
 input { flex: 1; padding: 5px; }
 button { background: #ff1f1f; color: white; border: none; padding: 5px 10px; cursor: pointer; }
